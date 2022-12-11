@@ -125,16 +125,26 @@ footer ul {
     margin: 1rem 0;
 
 }
+footer .loop img{
+    width: 6rem;
+}
+footer .loop{
+    display: flex;
+    justify-content: center;
+}
 .footer-menu{text-align: center;}
 footer li {
     margin: 1rem 0;
 }
-.social ul{
+.social {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    justify-content: center;
 }
-.social ul li{
+.social li{
     margin-right: 1rem;
+   
 }
 .copyRight p{
     font-size: 12px;
@@ -151,7 +161,7 @@ footer li {
      display:none;
     
      position: absolute;
-    background-color: var(--darkGray) ;
+    background-color: var(--black) ;
      right: 0;
 
      text-align: center;
