@@ -103,10 +103,12 @@ padding: 2rem 4rem;
 #top{
     background-image: url("../imgs/desktop/image-hero.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
     color: var(--white);
     position: relative;
+
 }
  /* APPLYING footer style */
 footer{
@@ -204,6 +206,18 @@ footer li {
         width: 50%;
         margin-top: 10rem;
     }
+    .footerLeft{
+      width: 50%;
+    }
+    footer{
+      align-items: left;
+      display: block;
+      flex-direction: row;
+    }
+  
+   footer .loop{justify-content: left;}
+   
+   .footer-menu{text-align: left;}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -212,4 +226,5 @@ footer li {
         width: 50%;
         margin-top: 10rem;
     }
+   
 }
