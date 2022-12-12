@@ -9,16 +9,15 @@
 </head>
 <body>
 
-    <div id="top">
+    <section id="top">
         <div class="container">
-        <nav class="nav">
+       <!--  <nav class="nav">
             <div class="logo">
                 <img src="imgs/logo.svg" alt="Logo">
             </div>
             <div class="navBars">
                 <ul>
-                     <!-- USING CHECKBOX HACK -->
- 
+                     
 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 <input type="checkbox" id="checkbox_toggle" />
 <div class="menu">
@@ -30,13 +29,51 @@
                 </div>
                 </ul>
             </div>
-         </nav>
+         </nav> -->
+        
+
+         <nav class="navbar">
+         <!-- LOGO -->
+            
+       <div class="logo"><img src="./imgs/logo.svg" alt=""></div>
+            
+           <!-- NAVIGATION MENU -->
+            
+        <ul class="nav-links">
+            
+         <!-- USING CHECKBOX HACK -->
+            
+   <input type="checkbox" id="checkbox_toggle" />
+            
+    <label for="checkbox_toggle" class="hamburger">
+        <img src="./imgs/icon-close.svg" id="close" alt=""> 
+        <img src="./imgs/icon-hamburger.svg" id="hamburger" alt="">
+        </label>
+            
+     <!-- NAVIGATION MENUS -->
+            
+       <div class="menu ">
+            
+         <li ><a href="#about" class="border">About</a></li>
+            
+      <li ><a href="#carriers" class="border">Carriers</a></li>    
+     <li ><a href="#events" class="border">Events</a></li>
+            
+       <li ><a href="#products" class="border">Products</a></li>
+       <li ><a href="#support" class="border">Support</a></li>
+      </div>
+            
+   </ul>
+            
+             </nav>
+        
+        
          <div class="header">
             <h1 class="heading-font">immersive experiences that deliver</h1>
          </div>
     
     </div>
-    </div>
+    </section>
 
 
 
@@ -137,29 +174,36 @@
     
 
 <footer>
-    <div class="container">
+  <div class="container footer-container">
+<div class="footerright">
     <div class="loop">
         <img src="imgs/logo.svg" alt="Logo">
     </div>
 <ul class="footer-menu">
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#support">Support</a></li>
+    <li><a href="#about" class="border">About</a></li>
+    <li><a href="#careers"  class="border">Careers</a></li>
+    <li><a href="#events"  class="border">Events</a></li>
+    <li><a href="#products"  class="border">Products</a></li>
+    <li><a href="#support"  class="border">Support</a></li>
 </ul> 
-<ul class="social">
-    <li><img src="/imgs/icon-facebook.svg" alt=""></li>
-    <li><img src="/imgs/icon-twitter.svg" alt=""></li>
-    <li><img src="/imgs/icon-pinterest.svg" alt=""></li>
-    <li><img src="/imgs/icon-instagram.svg" alt=""></li>
-</ul>
+</div>
 
- 
-  
-    <div class="copyRight">
-        <p> @2021 Loopstudios. All rights reserved</p>
-    </div>
+
+
+<div class="footerright">
+    <ul class="social">
+        <li class="border"><img src="./imgs/icon-facebook.svg" alt=""  ></li>
+        <li class="border"><img src="./imgs/icon-twitter.svg" alt="" ></li>
+        <li class="border"><img src="./imgs/icon-pinterest.svg" alt=""  ></li>
+        <li class="border"> <img src="./imgs/icon-instagram.svg" alt="" ></li> 
+    
+    </ul>
+    
+        <div class="copyRight">
+            <p> @2021 Loopstudios. All rights reserved .</p>
+        </div>
+</div>
+</div>
 </div>
 </footer>
     <script src="./js/app.js"></script>
