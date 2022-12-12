@@ -397,7 +397,10 @@ footer li {
 @media only screen and (max-width: 767px) {
   .nav-links a {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+.menu li {
+  padding: 14px 20px;
 }
   .hero-banner{
       display: block;
@@ -425,8 +428,35 @@ footer li {
   }
   
 
-
   .deepearth{
+    /* background-image: url(../imgs/desktop/image-deep-earth.jpg); */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-deep-earth.jpg);
+  }
+  .night-arcade{
+    
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-night-arcade.jpg);
+  }
+.soccer-team{
+    
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-soccer-team.jpg);
+}
+.image-grid{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-grid.jpg);
+}
+.from-above{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-from-above.jpg);
+}
+.pocket-borealis{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-pocket-borealis.jpg);
+}
+.curiosity{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-curiosity.jpg);
+}
+.fisheye{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.805)), url(../imgs/mobile/image-fisheye.jpg);
+}
+
+ /*  .deepearth{
       background-image: url(../imgs/mobile/image-deep-earth.jpg);
     }
     .night-arcade{
@@ -449,7 +479,7 @@ footer li {
   }
   .fisheye{
       background-image: url(../imgs/mobile/image-fisheye.jpg);
-  }
+  } */
 
   .btn-wrapper{
       display: none;
@@ -689,22 +719,12 @@ footer li {
   }
 
 
-  .Grid--holly-grail .aside {
-    flex: 1 calc(25% - 1em);
-  }
-
-  .Grid--1of2 > .Grid-cell {
-    flex: 0 0 50%;
-  }
-
-
+  
   .Grid--1of4 > .Grid-cell:first-of-type {
     flex: 0 0 50%;
   }
 
-  .Grid--1of3 > .Grid-cell:first-of-type {
-    flex: 0 0 100%;
-  }
+  
 }
 /* Large screens */
 @media (min-width: 48em) {
@@ -712,36 +732,10 @@ footer li {
     flex: 1;
   }
 
-  .Grid--holly-grail .main {
-    flex: 2;
-  }
-  .Grid--holly-grail .aside {
-    flex: 1;
-  }
-  .Grid--holly-grail .aside-1 {
-    order: 1;
-  }
-  .Grid--holly-grail .main {
-    order: 2;
-  }
-  .Grid--holly-grail .aside-2 {
-    order: 3;
-  }
-
-  .Grid--1of2 > .Grid-cell {
-    flex: 0 0 50%;
-  }
-
-  .Grid--1of6 > .Grid-cell:first-of-type {
-    flex: 0 0 16.6666%;
-  }
+ 
 
   .Grid--1of4 > .Grid-cell:first-of-type {
     flex: 0 0 25%;
-  }
-
-  .Grid--1of3 > .Grid-cell:first-of-type {
-    flex: 0 0 30%;
   }
 
   .Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
