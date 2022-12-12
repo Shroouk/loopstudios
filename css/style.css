@@ -158,7 +158,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 40vh;
+    height: 55vh;
     color: var(--white);
     position: relative;
 
@@ -395,6 +395,10 @@ footer li {
 
 
 @media only screen and (max-width: 767px) {
+  .nav-links a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
   .hero-banner{
       display: block;
   }
@@ -419,6 +423,7 @@ footer li {
       align-items: end;
       text-align: left;
   }
+  
 
 
   .deepearth{
@@ -545,7 +550,7 @@ footer li {
 .gallary-text{
   width: 80%;
   padding: 30px;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: #fff;
   text-transform: uppercase;
   z-index: 1000;
