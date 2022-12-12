@@ -16,11 +16,16 @@
     font-family: 'Alata', sans-serif;
     
 }
+h1{
+  color: #fff !important;
+  font-size: 2rem;
+}
 a {
 
     text-decoration: none;
    
    }
+   
  #close{
     display: none;
  }
@@ -125,10 +130,7 @@ a {
 .header{
     margin-top: 2rem;
     text-transform: uppercase;
-    padding: 1.5rem;
-    border: 2px solid;
-    font-weight: 400px;
-    width:10rem;
+    
     position: absolute;
     right: 0;
     left: 0;
@@ -136,6 +138,10 @@ a {
     bottom: 0;
     margin: auto;
     height: fit-content;
+    padding: 3.5rem 1rem;
+    border: 2px solid;
+    font-weight: 400px;
+    width: 80%;
 }
 
 
@@ -146,6 +152,12 @@ a {
 .container{
   
 padding: 2rem 4rem;
+}
+
+.nav-container{
+
+    padding: 2rem 1rem !important;
+
 }
 #top{
     background-image: url("../imgs/desktop/image-hero.jpg");
@@ -238,6 +250,10 @@ footer li {
     
 /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
+  h1{
+    font-size: 4rem;
+    color: #fff;
+   }
     #top{
         height: 70vh;
     }
@@ -520,7 +536,9 @@ footer li {
 
 
 
-
+.gallary-row-text{
+  font-size: 2rem;
+}
 
 
 .gallary-text{
@@ -592,10 +610,10 @@ footer li {
   justify-content: space-between;
 }
 
-.heading-font{
+/* .heading-font{
   font-size: 2rem;
 }
-
+ */
 
 .see-btn{
   padding: 10px 35px;
