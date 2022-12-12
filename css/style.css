@@ -21,6 +21,9 @@ a {
     text-decoration: none;
    
    }
+ #close{
+    display: none;
+ }
    
    li {
    
@@ -29,7 +32,6 @@ a {
    }
 
   /*RESPONSIVE NAVBAR MENU STARTS*/
- 
   input[type=checkbox]{
 
     display: none;
@@ -38,7 +40,7 @@ a {
    /*HAMBURGER MENU*/
 
 .hamburger {
-
+ 
     display: none;
    
     font-size: 24px;
@@ -46,19 +48,80 @@ a {
     user-select: none;
    
    }
+
 /* NAVBAR STYLING STARTS */
-
-
-.logo{
-    float:left;
-}
 .logo img{
     width: 7rem;
+}
+.menu { 
 
-}
-.navBars{
-    float: right;
-}
+    display:none;
+   
+    position: absolute;
+   
+    /* background-color:var(--black); */
+   
+    right: 0;
+   
+    left: 0;
+   
+    text-align: center;
+   
+    padding: 3rem 0;
+    margin: 0 4rem;
+   }
+ /*   .menu li + li {
+
+    margin-top: 12px;
+   
+   } */
+   .menu li {
+   
+    padding: 5px 14px;
+   
+   }
+
+   .hamburger {
+
+    display: block;
+   
+   }
+   
+.navbar {
+
+    display: flex;
+   
+    align-items: center;
+   
+    justify-content: space-between;
+   
+    padding: 20px;
+   
+   }
+   .nav-links a {
+
+    color: var(--white);
+   
+   }
+
+   
+    
+    input[type=checkbox]:checked ~ .menu{
+    
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+    
+    }
+    
+    .hamburger {
+    
+     display: block;
+    
+    }
+
+/* *************** */
 .header{
     margin-top: 2rem;
     text-transform: uppercase;
@@ -66,28 +129,16 @@ a {
     border: 2px solid;
     font-weight: 400px;
     width:10rem;
-
-}
-.header::before{
-content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
-}
-nav ul{
-    list-style-type:none;
-}
-nav ul li{
-    display: inline;
-    margin-left: 2rem;
-    padding: 5px 14px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
 }
 
-nav a{
-    text-decoration: none;
-    color: var(--white);
-}
+
 .heading-font{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -101,7 +152,7 @@ padding: 2rem 4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 70vh;
+    height: 40vh;
     color: var(--white);
     position: relative;
 
@@ -149,6 +200,7 @@ footer li {
 
 .border{
     position:relative;
+   
 }
 .border:hover::after{
    content:'';
@@ -160,6 +212,7 @@ footer li {
     margin: auto;
     bottom:-5px; /*Change this to increase/decrease distance*/
     border-bottom: 2px solid #fff;  
+    transition: 0.3s ease;
 }
 .footer-container{
     display: block;
@@ -175,49 +228,24 @@ footer li {
 }
 /* ***************************** */
 
-  /* APPLYING MEDIA QUERIES */
+  /* APPLYING MEDIA QUERIES small devices */
 
 @media (max-width: 768px) {
 
-    .menu { 
-    width: 50%;
-     display:none;
     
-     position: absolute;
-    background-color: var(--black) ;
-     right: 0;
-
-     text-align: center;
-    
-     padding: 16px 0;
-    
-    }
-    
-  
-    
-   
-    
-    input[type=checkbox]:checked ~ .menu{
-    
-        display: flex;
-    flex-direction: column;
-    
-    }
-    
-    .hamburger {
-    
-     display: block;
-    
-    }
     
     }
 
     
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+ @media only screen and (min-width: 992px) {
+    #top{
+        height: 70vh;
+    }
     .header{
-        width: 50%;
-        margin-top: 10rem;
+        width: 20rem;
+        right: unset;
+        left: unset;
     }
     footer li {
         margin: 0 1rem;
@@ -253,7 +281,41 @@ footer li {
         display: flex;
         justify-content: space-between;
     }
-}
+    .navbar {
+
+        display: flex;
+       
+        align-items: center;
+       
+        justify-content: space-between;
+       
+        padding: 20px;
+       
+        background-color: transparent;
+       }
+
+    .menu { 
+        display:flex;
+        gap:1em;
+        position: relative;
+        padding: 0;
+    margin: 0 ; 
+    font-size: 8px;
+       }
+     
+   /*HAMBURGER MENU*/
+   
+   .hamburger {
+   
+    display: none;
+    font-size: 24px;
+    user-select: none;
+
+   }
+      
+       
+   
+} 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

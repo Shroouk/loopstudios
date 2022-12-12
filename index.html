@@ -9,16 +9,15 @@
 </head>
 <body>
 
-    <div id="top">
+    <section id="top">
         <div class="container">
-        <nav class="nav">
+       <!--  <nav class="nav">
             <div class="logo">
                 <img src="imgs/logo.svg" alt="Logo">
             </div>
             <div class="navBars">
                 <ul>
-                     <!-- USING CHECKBOX HACK -->
- 
+                     
 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 <input type="checkbox" id="checkbox_toggle" />
 <div class="menu">
@@ -30,13 +29,51 @@
                 </div>
                 </ul>
             </div>
-         </nav>
+         </nav> -->
+        
+
+         <nav class="navbar">
+         <!-- LOGO -->
+            
+       <div class="logo"><img src="./imgs/logo.svg" alt=""></div>
+            
+           <!-- NAVIGATION MENU -->
+            
+        <ul class="nav-links">
+            
+         <!-- USING CHECKBOX HACK -->
+            
+   <input type="checkbox" id="checkbox_toggle" />
+            
+    <label for="checkbox_toggle" class="hamburger">
+        <img src="./imgs/icon-close.svg" id="close" alt=""> 
+        <img src="./imgs/icon-hamburger.svg" id="hamburger" alt="">
+        </label>
+            
+     <!-- NAVIGATION MENUS -->
+            
+       <div class="menu ">
+            
+         <li ><a href="#about" class="border">About</a></li>
+            
+      <li ><a href="#carriers" class="border">Carriers</a></li>    
+     <li ><a href="#events" class="border">Events</a></li>
+            
+       <li ><a href="#products" class="border">Products</a></li>
+       <li ><a href="#support" class="border">Support</a></li>
+      </div>
+            
+   </ul>
+            
+             </nav>
+        
+        
          <div class="header">
             <h1 class="heading-font">immersive experiences that deliver</h1>
          </div>
     
     </div>
-    </div>
+    </section>
 
 <footer>
   <div class="container footer-container">
