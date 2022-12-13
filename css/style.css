@@ -139,7 +139,7 @@ a {
     padding: 2.5rem 1rem;
     border: 2px solid;
     font-weight: 400px;
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -154,7 +154,8 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 55vh;
+    /* 55 */
+    height: 100vh;
     color: var(--white);
     position: relative;
 
