@@ -309,7 +309,13 @@ footer li {
         position: relative;
         padding: 0;
     margin: 0 ; 
-    font-size: 8px;
+   
+       }
+       .menu a,footer a,footer .copyRight p{
+        font-size: 10px;
+       }
+       footer .social li img{
+        width: 1rem;
        }
      
    /*HAMBURGER MENU*/
