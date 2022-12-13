@@ -45,13 +45,9 @@ a {
    /*HAMBURGER MENU*/
 
 .hamburger {
- 
     display: none;
-   
     font-size: 24px;
-   
     user-select: none;
-   
    }
 
 /* NAVBAR STYLING STARTS */
@@ -298,7 +294,7 @@ footer li {
        
         justify-content: space-between;
        
-        padding: 20px;
+        padding: 20px 0;
        
         background-color: transparent;
        }
@@ -398,10 +394,11 @@ footer li {
 
 
 @media only screen and (max-width: 767px) {
-  .nav-links a {
+  /* we don't need it */
+/*   .nav-links a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-}
+} */
 .gallary-wrapper {
   margin: 5rem auto 5rem auto !important;
 }
