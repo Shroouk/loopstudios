@@ -577,7 +577,6 @@ footer li {
 
 
 
-
 .gallary-row-text{
   font-size: 2rem;
 }
@@ -594,6 +593,12 @@ footer li {
 }
 
 
+@media (min-width: 445px) and (max-width:1000px){
+  .gallary-text {
+    padding: 0 0 30px 15px;
+    font-size: 1.25rem;
+}
+}
 
 
 
