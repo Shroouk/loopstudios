@@ -254,7 +254,7 @@ footer li {
         right: unset;
         left: unset;
         width: 35rem;
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     }
     footer li {
         margin: 0 1rem;
